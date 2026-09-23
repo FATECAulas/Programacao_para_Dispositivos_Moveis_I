@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Curriculo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Currículo Rafaela Botelho"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#B0116E"
+                   FontFamily="Courier New"/>
+
+            <Image Source="icon.jpg" 
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Rafaela de Oliveira Botelho | 21 anos | São Paulo - SP"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   TextColor="#B0116E"/>
+            
+            <!--//Resumo Profissional//-->
+            <Label Text="Resumo Profissional" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text="Desenvolvedor de Software focado no desenvolvimento web e mobile, com experiência na criação de aplicações completas (front-end e back-end) e gerenciamento de bancos de dados. Com sólida base acadêmica e prática na resolução de problemas, busco constantemente aplicar boas práticas de arquitetura de código, desenvolvimento ágil e inovação tecnológica para entregar soluções eficientes e funcionais."
+                   HeightRequest="100"/>
+
+            <!--Objetivo-->
+            <Label Text="Objetivo" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text="Atuar como Desenvolvedor Júnior (Full Stack / Web / Mobile), aplicando meus conhecimentos em programação e engenharia de software para contribuir ativamente em projetos desafiadores e evoluir junto à equipe."
+                   HeightRequest="60"/>
+
+            <!--Formação Acadêmica-->
+            <Label Text="Formação Acadêmica" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text="Tecnologia em Desenvolvimento de Software Multiplataforma – FATEC Zona Leste (FATEC ZL)"
+                   HeightRequest="50"/>
+
+            <!--Cursos Complementares-->
+            <Label Text="Cursos Complementares" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text=" - Técnico em Desenvolvimento de Sistemas – SENAI Mooca "/>
+            <Label Text=" - Desenvolvimento de Aplicações Mobile com .NET MAUI / C# "/>
+            <Label Text=" - Desenvolvimento Web e Back-End com Django e Python "
+                   HeightRequest="50"/>
+
+            <!--Experiências & Atividadesa-->
+            <Label Text="Experiências e Atividades" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text=" - Plataforma Web para ONG de Doação de Animais: Desenvolvimento de sistema web focado em doações e gestão, utilizando Django para back-end e modelagem de banco de dados."/>
+            <Label Text=" - Aplicação Web Interativa (PokeList): Criação de um sistema de checklist e gerenciamento de coleções com interface dinâmica em JavaScript, HTML e CSS."/>
+            <Label Text=" - Implantação de Bancos de Dados em Nuvem: Deploy e gerenciamento de banco de dados PostgreSQL na plataforma Neon para portfólio pessoal."
+                   HeightRequest="50"/>
+
+            <!--Habilidades Técnicas-->
+            <Label Text="Habilidades Técnicas" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <FlexLayout Wrap="Wrap" Direction="Row" AlignItems="Center">
+                <Button Text="C#"
+                        BackgroundColor="#D866A7"
+                        FontAttributes="Bold"
+                        Margin="0,0,8,8"/>
+
+                <Button Text="Python"
+                        BackgroundColor="#D866A7"
+                        FontAttributes="Bold"
+                        Margin="0,0,8,8"/>
+
+                <Button Text="JavaScript"
+                        BackgroundColor="#D866A7"
+                        FontAttributes="Bold"
+                        Margin="0,0,8,8"/>
+
+                <Button Text="SQL"
+                        BackgroundColor="#D866A7"
+                        FontAttributes="Bold"
+                        Margin="0,0,8,8"/>
+            </FlexLayout>
+
+            <!--Futuro Acadêmico e Carreira-->
+            <Label Text="Futuro Acadêmico e Carreira" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text="Interesse em aprofundar estudos e especialização em Arquitetura de Software, Engenharia de Dados e Inteligência Artificial, acompanhando as tendências do mercado para construir sistemas escaláveis e de alta performance."
+                   HeightRequest="100"/>
+
+            <!--Empresas e Objetivos-->
+            <Label Text="Empresas e Objetivos" 
+                   FontSize="21"
+                   FontAttributes="Bold"/>
+            <Label Text="Curto prazo: Atuar como Desenvolvedor Júnior, integrando equipes dinâmicas, aperfeiçoando minhas habilidades práticas e gerando valor real através do código."/>
+            <Label Text="Longo prazo: Evoluir na carreira técnica até me tornar Arquiteto de Software, liderando decisões estruturais em sistemas de grande porte e colaborando com o crescimento do time."
+                   HeightRequest="100"/>
+
+
+            <Image Source="melody.gif" 
+                   IsAnimationPlaying="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
