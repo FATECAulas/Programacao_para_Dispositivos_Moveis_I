@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NavPageTelaAbas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewpages="clr-namespace:NavPageTelaAbas.ViewPages"
+    Shell.NavBarIsVisible="True"
+    Shell.TabBarIsVisible="True"
+    Shell.BackgroundColor="White"
+    Shell.ForegroundColor="#E65100"
+    Shell.TitleColor="#E65100"
+    Shell.TabBarBackgroundColor="White"
+    Shell.TabBarForegroundColor="#E65100"
+    Shell.TabBarTitleColor="#E65100"
+    Shell.TabBarUnselectedColor="#757575"
+    Title="Calculadora e IMC">
+
+    <Tab Title="Calculadora" Icon="calculator.png">
+        <ShellContent
+            Title="Calculadora"
+            Route="calculadora"
+            ContentTemplate="{DataTemplate viewpages:CalcPage}" />
+    </Tab>
+
+    <Tab Title="IMC" Icon="imc.png">
+        <ShellContent
+            Title="IMC"
+            Route="imc"
+            ContentTemplate="{DataTemplate viewpages:ImcPage}" />
+    </Tab>
+
+    <Tab Title="Sobre" Icon="info.png">
+        <ShellContent
+            Title="Sobre"
+            Route="sobre"
+            ContentTemplate="{DataTemplate viewpages:SobrePage}" />
+    </Tab>
+
+</Shell>

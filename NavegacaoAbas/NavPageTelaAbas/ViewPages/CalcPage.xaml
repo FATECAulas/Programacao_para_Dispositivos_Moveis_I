@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavPageTelaAbas.ViewPages.CalcPage"
+             BackgroundColor="#F9F9F9"
+             Title="Calculadora">
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="15" VerticalOptions="Center">
+            <Label Text="Calculadora 🎃" 
+                   FontSize="26" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   TextColor="#E65100" />
+
+            <Label Text="Digite o primeiro número:" 
+                   TextColor="#333333" />
+            <Entry x:Name="TxtNum1" 
+                   Placeholder="Ex: 10" 
+                   Keyboard="Numeric" 
+                   TextColor="#333333" 
+                   BackgroundColor="White"
+                   PlaceholderColor="#999999" />
+
+            <Label Text="Digite o segundo número:" 
+                   TextColor="#333333" />
+            <Entry x:Name="TxtNum2" 
+                   Placeholder="Ex: 5" 
+                   Keyboard="Numeric" 
+                   TextColor="#333333" 
+                   BackgroundColor="White"
+                   PlaceholderColor="#999999" />
+
+            <Label Text="Selecione a operação:" 
+                   TextColor="#333333" />
+            <Picker x:Name="PckOperacao" 
+                    Title="Escolha (+, -, *, /)" 
+                    TextColor="#333333" 
+                    TitleColor="#999999"
+                    BackgroundColor="White">
+                <Picker.Items>
+                    <x:String>+</x:String>
+                    <x:String>-</x:String>
+                    <x:String>*</x:String>
+                    <x:String>/</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <Button x:Name="BtnCalcular" 
+                    Text="Calcular" 
+                    Clicked="BtnCalcular_Clicked"
+                    BackgroundColor="#E65100" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    CornerRadius="10" 
+                    HeightRequest="50" />
+
+            <Label x:Name="LblMsg" 
+                   FontSize="14" 
+                   TextColor="#D32F2F" 
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
